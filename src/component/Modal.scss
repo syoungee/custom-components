@@ -1,0 +1,52 @@
+.react-modal {
+  display: none;
+
+  &.react-show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .react-modal-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    top: 0;
+    left: 0;
+    z-index: 1100;
+    cursor: pointer;
+    position: fixed;
+  }
+
+  .react-modal-dialog {
+    border-radius: 0.2rem;
+    z-index: 1150;
+    background-color: #fff;
+    height: 200px;
+    width: 500px;
+    padding: 1rem;
+    position: relative;
+    align-self: center;
+  }
+
+  .react-modal-close {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    position: absolute;
+    z-index: 1150;
+    right: 5px;
+    top: 4px;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}
